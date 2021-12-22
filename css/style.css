@@ -1,0 +1,264 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none !important;
+    text-transform: capitalize !important;
+    transition: all .2s linear;
+    color:#eee !important;
+}
+/* Start Global section */
+:root{
+    --main-color:#111;
+    --second-color: #f9ca24;
+}
+
+*::selection{
+    background:var(--second-color);
+    color:var(--main-color);
+}
+
+html::-webkit-scrollbar{
+    width:.5rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:var(--main-color);
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--second-color);
+}
+
+.main{
+    background:var(--main-color);
+    /*overflow-x: hidden;*/
+}
+
+.content {
+    margin-left: 25%;
+}
+
+@media (max-width: 992px) {
+    .content {
+        margin-left: 0;
+    }
+}    
+
+
+a > .custom-btn {
+    padding: 0.5rem 2rem;
+    margin: 1rem 0 0;
+    background: #333;
+    border-radius: 5rem;
+}
+
+a > .custom-btn:hover{
+    background:var(--second-color);
+}
+
+.heading {
+    border-bottom: 1px solid;
+    margin: 0 0 2rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.heading > span{
+    color: var(--second-color) !important;
+}
+/* End Globel section */
+
+
+/* Start header section */
+header {
+    background-color: #1a1a1a;
+    margin-left: -100%;
+    width: 100%;
+    z-index: 1000;
+}
+
+@media (min-width: 576px) {
+    .header {
+        margin-left: -50%;
+        width: 50%!important;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    .header {
+        margin-left: 0;
+        width: 25% !important;
+    }
+    
+}
+
+header.toggle {
+    margin-left: 0
+}
+
+header .user img{
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid var(--second-color);
+}
+
+header .ul{
+    width:100%;
+}
+
+header  ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    background: #333;
+    border-radius: 5rem;
+}
+
+header ul li a:hover,
+header ul li a.active{
+    background:var(--second-color);
+    color: var(--main-color) !important;
+}
+/* End header section */
+
+/* Start home section */
+.home h1 span {
+    color: var(--second-color) !important;
+}
+
+.home p {
+    font-size: 14px;
+    color: #eee !important;
+}
+/* End home section */
+
+
+/* Start about section */
+.about .left-box span {
+    color: var(--second-color) !important;
+}
+
+.about .box-about {
+    background: #333333;
+    border-radius: 7px;
+    margin-bottom: 2rem;
+}
+
+.about .box-about span {
+    color: var(--second-color) !important;
+}
+/* Start about section */
+
+/* Start education section */
+.education .box-education{
+    border-left: 2px solid;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.education .box-education i {
+    position: absolute;
+    display: block;
+    top: -4px;
+    left: -17px;
+    background-color: var(--second-color);
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 50%;
+}
+
+.education .box-education span {
+    padding: 0.1rem 0.8rem;
+    margin: 0 0 1rem;
+    background: #333;
+    border-radius: 5rem;
+    display: inline-block;
+}
+
+.education .box-education p {
+    font-size: 14px;
+}
+/* Start education section */
+
+/* Start portfolio section */
+.portfolio .box-image{
+    margin:1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio .box-image .box img{
+    object-fit: cover;
+}
+
+.portfolio .box-image:hover img{
+    transform: scale(1.2);
+}
+/* Start portfolio section */
+
+
+/* Start contact section */
+.contact .contact-content .info i {
+    color: var(--second-color) !important;
+    display: inline-block;
+    margin-right: .5rem;
+}
+
+.contact .box-input{
+    background:#3333;
+    color:#fff;
+    outline: none !important; 
+    border:none;
+}
+
+.contact .box-input::placeholder{
+    text-transform: capitalize;
+}
+
+.contact .custom-btn {
+    padding: 0.5rem 2rem;
+    margin: 0;
+    background: #333;
+    border-radius: 5rem;
+}
+
+.contact .custom-btn:hover{
+    background:var(--second-color);
+}
+
+/* End contact section */
+
+
+
+/* Start menu section */
+.menu {
+    position: fixed;
+    right: 25px;
+    top: 25px;
+    width: 40px;
+    height: 40px;
+    background: #333;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1001;
+}
+/* End menu section */
+
+
+/* Start scroll button section */
+.scroll {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background: #f9ca24;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+/* End scroll button section */
